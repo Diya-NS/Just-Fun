@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EternalBite™ | Infinite Flavor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: radial-gradient(circle, #ff007a 0%, #0d0d0d 100%);
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #fff;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ffccff;
+    }
+    .hero-image {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero-image img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 0, 150, 0.7);
+    }
+    .features, .pricing, .testimonials, .countdown, .cta {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .features h2, .pricing h2, .testimonials h2, .countdown h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #ff007a;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .features li, .testimonials li {
+      margin: 15px 0;
+    }
+    .testimonials li {
+      font-style: italic;
+      color: #ccc;
+    }
+    .pricing-box {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #ff007a;
+      box-shadow: 0 0 20px #ff007a55;
+    }
+    .pricing-box h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .pricing-box p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    .countdown-timer {
+      font-size: 2rem;
+      color: #ff33cc;
+      margin-top: 10px;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 30px;
+      font-family: 'Orbitron', sans-serif;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #ff007a;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #ff007a;
+      transition: all 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #ff33a6;
+      box-shadow: 0 0 30px #ff33a6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍔 EternalBite™</h1>
+    <p>One Bite. Infinite Flavor. Zero Regret.</p>
+  </header>
+
+  <div class="hero-image">
+    <img src="img.png" alt="Surreal Space Burger">
+  </div>
+
+  <section class="features">
+    <h2>Why EternalBite™ Is (Probably) Illegal</h2>
+    <ul>
+      <li>🤖 Machine-Learning Mayo™ – It gets smarter with every sandwich.</li>
+      <li>🔥 Flame-Grilled by Dragons – No gas. Just mythical beast energy.</li>
+      <li>🧬 DNA-Matched Flavors – Your burger, your genome, your destiny.</li>
+      <li>🚀 Delivers anywhere on Earth... and the Moon (beta).</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <h2>Choose Your Bite Plan</h2>
+    <div class="pricing-box">
+      <h3>$999 / month</h3>
+      <p>Includes 1 quantum burger/day, 24/7 flavor hotline access, and weekly mood-optimized sauces. Worth every penny (and your soul).</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>They’ve Spoken (Telepathically)</h2>
+    <ul>
+      <li>👽 "Finally, a burger that tastes like my home planet!" – Glorp, Andromeda-6</li>
+      <li>🤖 "01000001++ I am full. I am happy." – Model XJ-99</li>
+      <li>🚀 "I didn't eat it. It ate me. Would do again." – Elon Musk (probably)</li>
+    </ul>
+  </section>
+
+  <section class="countdown">
+    <h2>Next Bite Launches In:</h2>
+    <div class="countdown-timer" id="countdown">00:03:21</div>
+  </section>
+
+  <div class="cta">
+    <a href="checkout.html">JOIN THE FEEDING 🌕</a>
+  </div>
+
+  <footer>
+    &copy; 2025 EternalBite™ — Your Future is Medium-Rare.
+  </footer>
+
+  <!-- Optional: Countdown simulation -->
+  <script>
+    // Fake countdown (not real time)
+    const countdown = document.getElementById("countdown");
+    let time = 3 * 60 + 21; // in seconds
+
+    setInterval(() => {
+      if (time > 0) time--;
+      const mins = String(Math.floor(time / 60)).padStart(2, '0');
+      const secs = String(time % 60).padStart(2, '0');
+      countdown.textContent = `00:${mins}:${secs}`;
+    }, 1000);
+  </script>
+
+</body>
+</html>
